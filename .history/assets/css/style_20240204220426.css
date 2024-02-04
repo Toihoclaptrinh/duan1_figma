@@ -42,7 +42,6 @@ a {
   /* phần phía trên sign up cách phía trên 8px cho bằng với phần bên dưới,nên để top -28px(36px-8),để âm 28 để cho phần 
   thừa ra bị ẩn đi */
   top: -28px;
-  z-index: 1;
 }
 
 .header .body {
@@ -257,19 +256,9 @@ a {
   margin-top: 48px;
 }
 
-.hero .descstrong strong {
-  font-family: var(--font-heading);
+.header .desc strong {
+  font-family: Sen;
   font-size: 4.4rem;
   font-weight: 700;
-  line-height: 1.23;
-  color: #171100;
-  margin-right: 15px;
-}
-
-.hero .descstrong {
-  margin-top: 8px;
-}
-
-.hero .descstrong strong:nth-child(2) {
-  margin-left: 28px;
+  line-height: 3.37;
 }

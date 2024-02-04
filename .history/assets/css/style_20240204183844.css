@@ -7,7 +7,6 @@ font-family: 'Sen', sans-serif;
 
 :root {
   --font-heading: "Sen", sans-serif;
-  --primary-color: #ffb900;
 }
 
 * {
@@ -42,7 +41,6 @@ a {
   /* phần phía trên sign up cách phía trên 8px cho bằng với phần bên dưới,nên để top -28px(36px-8),để âm 28 để cho phần 
   thừa ra bị ẩn đi */
   top: -28px;
-  z-index: 1;
 }
 
 .header .body {
@@ -95,12 +93,8 @@ a {
   color: #fff;
   text-align: center;
   font-weight: 600;
-  border-radius: 999px;
+  border-radius: 24.5px;
   background: #171100;
-}
-
-.btn:hover {
-  opacity: 0.9;
 }
 
 .header .btn-sign-up {
@@ -209,67 +203,20 @@ a {
 .hero .desc {
   margin-top: 22px;
   font-size: 1.8rem;
-  line-height: 1.67;
+  font-weight: 400;
+  line-height: 1.88;
+  text-align: left;
   color: #5f5b53;
 }
 
 .hero .cta-group {
   display: flex;
   margin-top: 38px;
-  align-items: center;
 }
 
 .hero .btn {
-  min-width: 180px;
-  background-color: var(--primary-color);
-  line-height: 64px;
-}
-
-.hero .watch-video {
-  margin-left: 28px;
-  border: none;
-  background-color: transparent;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-
-.hero .watch-video .icon {
-  width: 40px;
-  height: 40px;
-  background-color: #ffffff;
-  border-radius: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
-    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
-}
-
-.hero .watch-video span {
-  margin-left: 14px;
-  font-size: 1.8rem;
-  font-weight: 600;
-  line-height: 1.67;
-}
-
-.hero .descRecent {
-  margin-top: 48px;
-}
-
-.hero .descstrong strong {
-  font-family: var(--font-heading);
-  font-size: 4.4rem;
-  font-weight: 700;
-  line-height: 1.23;
-  color: #171100;
-  margin-right: 15px;
-}
-
-.hero .descstrong {
-  margin-top: 8px;
-}
-
-.hero .descstrong strong:nth-child(2) {
-  margin-left: 28px;
+  width: 180px;
+  height: 64px;
+  border-radius: 32px;
+  background-color: #ffb900;
 }

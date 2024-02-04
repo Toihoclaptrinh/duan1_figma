@@ -1,0 +1,140 @@
+/* font
+ font-family: 'Poppins', sans-serif;
+font-family: 'Sen', sans-serif;
+ */
+
+/* Phần code chung */
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* code phần khối giao diện */
+.main-content {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(100% - 48px);
+}
+
+/* Phần header */
+.header {
+  background: #fffcf4;
+}
+.header.fixed {
+  position: sticky;
+  /* phần phía trên sign up cách phía trên 8px cho bằng với phần bên dưới,nên để top -28px(36px-8),để âm 28 để cho phần 
+  thừa ra bị ẩn đi */
+  top: -28px;
+}
+
+.header .body {
+  display: flex;
+  align-items: center;
+  padding: 36px 0px 8px;
+}
+
+.nav ul {
+  display: flex;
+}
+.nav {
+  margin-left: auto;
+}
+
+/* Thanh điều hướng */
+.nav a {
+  position: relative;
+  color: #5f5b53;
+  font-size: 1.6rem;
+  padding: 8px 21px;
+}
+
+/* Dùng shadow tạo hiệu ứng in đậm khi hover  */
+.nav li.active a,
+.nav a:hover {
+  color: #171100;
+  text-shadow: 1px 0px 0px currentColor;
+}
+
+/* tạo dấu gạch chân dưới Home */
+.nav li.active a::after {
+  left: 21px;
+  bottom: 6px;
+  position: absolute;
+  display: block;
+  content: "";
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background: #171100;
+}
+
+/* sign-up  */
+.btn {
+  display: inline-block;
+  line-height: 50px;
+  padding: 0 16px;
+  min-width: 118px;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 24.5px;
+  background: #171100;
+}
+
+.header .btn-sign-up {
+  min-width: 144px;
+}
+
+.header .action {
+  margin-left: 49px;
+}
+
+/* phần hero  */
+
+.hero {
+  padding-top: 56px;
+  background-color: #fffcf4;
+}
+
+.hero .body {
+  display: flex;
+}
+
+.hero .media-block {
+  width: 48%;
+  position: relative;
+}
+
+.hero .contain-block {
+  width: 52%;
+}
+
+.hero .media-block .img {
+  width: 470px;
+  height: 685px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.hero .hero-summary {
+  width: 270px;
+  padding: 28px;
+  position: absolute;
+  bottom: 48px;
+  left: 300px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  display: flex;
+}
