@@ -324,43 +324,38 @@ a {
   cursor: pointer;
 }
 
-.popular .courses-list {
+.courses-list {
   display: flex;
   margin-top: 55px;
   justify-content: space-between;
   gap: 30px;
 }
 
-.popular .courses-list .courses-item {
-  flex: 1;
+.courses-list .courses-item {
   max-width: 370px;
   height: 466px;
   border-radius: 12px;
-  border: 1px solid #e2dfda;
+  box-shadow: 0px 18px 36px 0px #0000000d;
 }
 
-.popular .courses-list .courses-item:hover {
-  box-shadow: 0px 18px 36px 0px #0000000d;
-  border: none;
-}
 .popular .courses-item .thumb {
   width: 100%;
   height: 278px;
   object-fit: cover;
 }
 
-.popular .courses-item .info {
+.courses-item .info {
   margin: 16px 22px 22px;
 }
 
-.popular .courses-item .head {
+.courses-item .head {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 6px;
 }
 
-.popular .courses-item .title a {
-  color: #171100;
+.courses-item .head .title {
   font-family: var(--font-heading);
   font-size: 1.8rem;
   font-weight: 600;
@@ -372,32 +367,30 @@ a {
   font-weight: 400;
   line-height: 1.75;
   color: #fea31b;
-  margin-left: 6px;
 }
 
-.popular .courses-item .desc {
+.courses-item .desc {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 1.86;
   color: #5f5b53;
-  margin-top: 6px;
 }
 
-.popular .courses-item .foot {
+.courses-item .foot {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 12px 0px 22px;
 }
 
-.popular .courses-item .foot .price {
+.courses-item .foot .price {
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 1.67;
 }
 
-.popular .courses-item .foot .btn {
-  border: none;
+.courses-item .foot .btn {
+  border: 0px;
 }
 
 .courses-item .foot .btn:hover {

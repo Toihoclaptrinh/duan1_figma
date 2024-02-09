@@ -332,17 +332,12 @@ a {
 }
 
 .popular .courses-list .courses-item {
-  flex: 1;
   max-width: 370px;
   height: 466px;
   border-radius: 12px;
-  border: 1px solid #e2dfda;
+  /* box-shadow: 0px 18px 36px 0px #0000000d; */
 }
 
-.popular .courses-list .courses-item:hover {
-  box-shadow: 0px 18px 36px 0px #0000000d;
-  border: none;
-}
 .popular .courses-item .thumb {
   width: 100%;
   height: 278px;
@@ -359,8 +354,7 @@ a {
   justify-content: space-between;
 }
 
-.popular .courses-item .title a {
-  color: #171100;
+.courses-item .head .title {
   font-family: var(--font-heading);
   font-size: 1.8rem;
   font-weight: 600;
