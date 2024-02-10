@@ -407,7 +407,7 @@ a {
 }
 
 /* code phần feedback */
-
+/* code phần feedback */
 .feedback {
   background-color: #2e2100;
   margin-top: 135px;
@@ -421,24 +421,21 @@ a {
 
 .feedback .feedback-items {
   display: flex;
-  flex-shrink: 0;
-  max-width: 100%;
 }
 
 /* code khối bên trái */
-
-/* .feedback .info {
+.feedback .info {
   width: 159px;
-} */
+}
 
-.feedback .info .avatar {
+.feedback .avatar {
   border-radius: 50%;
   height: 72px;
   width: 72px;
   object-fit: cover;
 }
 
-.feedback .info .name {
+.feedback .name {
   font-family: var(--font-heading);
   font-size: 2.4rem;
   font-weight: 700;
@@ -447,7 +444,7 @@ a {
   margin-top: 18px;
 }
 
-.feedback .info .desc {
+.feedback .desc {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 1.86;
@@ -455,14 +452,19 @@ a {
   margin-top: 4px;
 }
 
-.feedback .info .dots {
+.feedback .dots {
   display: flex;
   width: 30px;
   gap: 6px;
   margin-top: 28px;
 }
 
-.feedback .info .dot {
+.feedback .dot.active {
+  background-color: var(--primary-color);
+  cursor: default;
+}
+
+.feedback .dot {
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -470,18 +472,17 @@ a {
   cursor: pointer;
 }
 
-.feedback .info .dot.active {
-  background-color: var(--primary-color);
-  cursor: default;
-}
-
 /* code khối bên phải */
 .feedback .describe {
   width: 66%;
-  margin-left: 241px;
+  margin-left: auto;
 }
 
-.feedback .describe .desc {
+.feedback .quotes {
+  /* Kiểu dáng cho quotes */
+}
+
+.feedback .desc {
   font-size: 2.6rem;
   font-style: italic;
   line-height: 1.54;

@@ -422,7 +422,8 @@ a {
 .feedback .feedback-items {
   display: flex;
   flex-shrink: 0;
-  max-width: 100%;
+  max-width: calc(100% - 48px);
+  overflow: hidden;
 }
 
 /* code khối bên trái */
@@ -462,17 +463,17 @@ a {
   margin-top: 28px;
 }
 
+.feedback .info .dot.active {
+  background-color: var(--primary-color);
+  cursor: default;
+}
+
 .feedback .info .dot {
   width: 6px;
   height: 6px;
   border-radius: 50%;
   background-color: #634700;
   cursor: pointer;
-}
-
-.feedback .info .dot.active {
-  background-color: var(--primary-color);
-  cursor: default;
 }
 
 /* code khối bên phải */

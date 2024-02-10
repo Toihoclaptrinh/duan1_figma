@@ -414,22 +414,16 @@ a {
   padding: 96px 0px;
 }
 
-.feedback .feedback-list {
-  display: flex;
-  overflow: hidden;
-}
-
 .feedback .feedback-items {
   display: flex;
-  flex-shrink: 0;
-  max-width: 100%;
+  justify-content: space-between;
 }
 
 /* code khối bên trái */
 
-/* .feedback .info {
+.feedback .info {
   width: 159px;
-} */
+}
 
 .feedback .info .avatar {
   border-radius: 50%;
@@ -458,8 +452,15 @@ a {
 .feedback .info .dots {
   display: flex;
   width: 30px;
-  gap: 6px;
+  justify-content: space-between;
   margin-top: 28px;
+}
+
+.feedback .info .dot.dot1 {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ffb900;
 }
 
 .feedback .info .dot {
@@ -467,23 +468,21 @@ a {
   height: 6px;
   border-radius: 50%;
   background-color: #634700;
-  cursor: pointer;
-}
-
-.feedback .info .dot.active {
-  background-color: var(--primary-color);
-  cursor: default;
 }
 
 /* code khối bên phải */
 .feedback .describe {
-  width: 66%;
   margin-left: 241px;
+  width: 740px;
+}
+
+.feedback .describe .quotes {
 }
 
 .feedback .describe .desc {
   font-size: 2.6rem;
   font-style: italic;
+  font-weight: 400;
   line-height: 1.54;
   color: #ffffff;
   padding-left: 36px;

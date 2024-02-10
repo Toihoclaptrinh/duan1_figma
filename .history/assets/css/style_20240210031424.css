@@ -422,7 +422,6 @@ a {
 .feedback .feedback-items {
   display: flex;
   flex-shrink: 0;
-  max-width: 100%;
 }
 
 /* code khối bên trái */
@@ -462,6 +461,11 @@ a {
   margin-top: 28px;
 }
 
+.feedback .info .dot.active {
+  background-color: var(--primary-color);
+  cursor: default;
+}
+
 .feedback .info .dot {
   width: 6px;
   height: 6px;
@@ -470,15 +474,11 @@ a {
   cursor: pointer;
 }
 
-.feedback .info .dot.active {
-  background-color: var(--primary-color);
-  cursor: default;
-}
-
 /* code khối bên phải */
 .feedback .describe {
-  width: 66%;
-  margin-left: 241px;
+  /* width: 66%;
+  margin-left: auto; */
+  width: 740px;
 }
 
 .feedback .describe .desc {

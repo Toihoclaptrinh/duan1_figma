@@ -416,20 +416,20 @@ a {
 
 .feedback .feedback-list {
   display: flex;
-  overflow: hidden;
+  /* overflow: hidden; */
+  /* justify-content: space-between; */
 }
 
 .feedback .feedback-items {
   display: flex;
   flex-shrink: 0;
-  max-width: 100%;
 }
 
 /* code khối bên trái */
 
-/* .feedback .info {
+.feedback .info {
   width: 159px;
-} */
+}
 
 .feedback .info .avatar {
   border-radius: 50%;
@@ -460,13 +460,6 @@ a {
   width: 30px;
   gap: 6px;
   margin-top: 28px;
-}
-
-.feedback .info .dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: #634700;
   cursor: pointer;
 }
 
@@ -475,15 +468,23 @@ a {
   cursor: default;
 }
 
+.feedback .info .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #634700;
+}
+
 /* code khối bên phải */
 .feedback .describe {
-  width: 66%;
   margin-left: 241px;
+  width: 66%;
 }
 
 .feedback .describe .desc {
   font-size: 2.6rem;
   font-style: italic;
+  font-weight: 400;
   line-height: 1.54;
   color: #ffffff;
   padding-left: 36px;

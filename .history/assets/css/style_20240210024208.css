@@ -408,83 +408,67 @@ a {
 
 /* code phần feedback */
 
+/* =================feedback================== */
 .feedback {
-  background-color: #2e2100;
   margin-top: 135px;
-  padding: 96px 0px;
+  padding: 96px 0;
+  background: #2e2100;
 }
 
-.feedback .feedback-list {
+.feedback-item {
   display: flex;
-  overflow: hidden;
 }
 
-.feedback .feedback-items {
-  display: flex;
-  flex-shrink: 0;
-  max-width: 100%;
-}
-
-/* code khối bên trái */
-
-/* .feedback .info {
-  width: 159px;
-} */
-
-.feedback .info .avatar {
-  border-radius: 50%;
-  height: 72px;
+.feedback-item .avatar {
   width: 72px;
+  height: 72px;
+  border-radius: 50%;
   object-fit: cover;
 }
 
-.feedback .info .name {
+.feedback-item .info .member-name {
+  margin-top: 18px;
+  color: #f7f7f7;
   font-family: var(--font-heading);
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 1.42;
-  color: #f7f7f7;
-  margin-top: 18px;
 }
 
-.feedback .info .desc {
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.86;
-  color: #bfbcb2;
+.feedback-item .info .desc {
   margin-top: 4px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  line-height: 1.86;
 }
 
-.feedback .info .dots {
-  display: flex;
-  width: 30px;
+.feedback-item .dots {
   gap: 6px;
+  display: flex;
   margin-top: 28px;
 }
 
-.feedback .info .dot {
-  width: 6px;
+.feedback-item .dot {
   height: 6px;
+  width: 6px;
   border-radius: 50%;
-  background-color: #634700;
+  background: #634700;
   cursor: pointer;
 }
 
-.feedback .info .dot.active {
-  background-color: var(--primary-color);
+.feedback-item .dot.active {
+  background: var(--primary-color);
   cursor: default;
 }
 
-/* code khối bên phải */
-.feedback .describe {
+.feedback-item .content {
   width: 66%;
-  margin-left: 241px;
+  margin-left: auto;
 }
 
-.feedback .describe .desc {
+.feedback-item blockquote {
+  color: #fff;
   font-size: 2.6rem;
   font-style: italic;
   line-height: 1.54;
-  color: #ffffff;
-  padding-left: 36px;
 }

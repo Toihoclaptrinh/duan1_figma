@@ -416,7 +416,7 @@ a {
 
 .feedback .feedback-list {
   display: flex;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .feedback .feedback-items {
@@ -462,17 +462,17 @@ a {
   margin-top: 28px;
 }
 
+.feedback .info .dot.active {
+  background-color: var(--primary-color);
+  cursor: default;
+}
+
 .feedback .info .dot {
   width: 6px;
   height: 6px;
   border-radius: 50%;
   background-color: #634700;
   cursor: pointer;
-}
-
-.feedback .info .dot.active {
-  background-color: var(--primary-color);
-  cursor: default;
 }
 
 /* code khối bên phải */

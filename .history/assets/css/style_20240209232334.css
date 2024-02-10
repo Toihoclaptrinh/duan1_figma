@@ -406,85 +406,17 @@ a {
   cursor: pointer;
 }
 
-/* code phần feedback */
-
-.feedback {
+.feedback .feedback-items {
   background-color: #2e2100;
   margin-top: 135px;
   padding: 96px 0px;
 }
 
-.feedback .feedback-list {
+.feedback-items {
   display: flex;
-  overflow: hidden;
 }
-
-.feedback .feedback-items {
-  display: flex;
-  flex-shrink: 0;
-  max-width: 100%;
-}
-
-/* code khối bên trái */
-
-/* .feedback .info {
-  width: 159px;
-} */
 
 .feedback .info .avatar {
-  border-radius: 50%;
-  height: 72px;
+  border-radius: 999px;
   width: 72px;
-  object-fit: cover;
-}
-
-.feedback .info .name {
-  font-family: var(--font-heading);
-  font-size: 2.4rem;
-  font-weight: 700;
-  line-height: 1.42;
-  color: #f7f7f7;
-  margin-top: 18px;
-}
-
-.feedback .info .desc {
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.86;
-  color: #bfbcb2;
-  margin-top: 4px;
-}
-
-.feedback .info .dots {
-  display: flex;
-  width: 30px;
-  gap: 6px;
-  margin-top: 28px;
-}
-
-.feedback .info .dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: #634700;
-  cursor: pointer;
-}
-
-.feedback .info .dot.active {
-  background-color: var(--primary-color);
-  cursor: default;
-}
-
-/* code khối bên phải */
-.feedback .describe {
-  width: 66%;
-  margin-left: 241px;
-}
-
-.feedback .describe .desc {
-  font-size: 2.6rem;
-  font-style: italic;
-  line-height: 1.54;
-  color: #ffffff;
-  padding-left: 36px;
 }

@@ -414,22 +414,16 @@ a {
   padding: 96px 0px;
 }
 
-.feedback .feedback-list {
-  display: flex;
-  overflow: hidden;
-}
-
 .feedback .feedback-items {
   display: flex;
-  flex-shrink: 0;
-  max-width: 100%;
+  justify-content: space-between;
 }
 
 /* code khối bên trái */
 
-/* .feedback .info {
+.feedback .info {
   width: 159px;
-} */
+}
 
 .feedback .info .avatar {
   border-radius: 50%;
@@ -443,6 +437,7 @@ a {
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 1.42;
+  white-space: nowrap;
   color: #f7f7f7;
   margin-top: 18px;
 }
@@ -452,38 +447,41 @@ a {
   font-weight: 400;
   line-height: 1.86;
   color: #bfbcb2;
+  white-space: nowrap;
   margin-top: 4px;
 }
 
 .feedback .info .dots {
   display: flex;
-  width: 30px;
   gap: 6px;
-  margin-top: 28px;
 }
 
-.feedback .info .dot {
+.feedback .info .dot:first-child {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ffb900;
+}
+
+.feedback .info .dot:first-child {
   width: 6px;
   height: 6px;
   border-radius: 50%;
   background-color: #634700;
-  cursor: pointer;
-}
-
-.feedback .info .dot.active {
-  background-color: var(--primary-color);
-  cursor: default;
 }
 
 /* code khối bên phải */
 .feedback .describe {
-  width: 66%;
   margin-left: 241px;
+}
+
+.feedback .describe .quotes {
 }
 
 .feedback .describe .desc {
   font-size: 2.6rem;
   font-style: italic;
+  font-weight: 400;
   line-height: 1.54;
   color: #ffffff;
   padding-left: 36px;

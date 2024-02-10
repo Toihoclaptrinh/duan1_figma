@@ -417,19 +417,19 @@ a {
 .feedback .feedback-list {
   display: flex;
   overflow: hidden;
+  justify-content: space-between;
 }
 
 .feedback .feedback-items {
   display: flex;
   flex-shrink: 0;
-  max-width: 100%;
 }
 
 /* code khối bên trái */
 
-/* .feedback .info {
+.feedback .info {
   width: 159px;
-} */
+}
 
 .feedback .info .avatar {
   border-radius: 50%;
@@ -460,6 +460,15 @@ a {
   width: 30px;
   gap: 6px;
   margin-top: 28px;
+  cursor: pointer;
+}
+
+.feedback .info .dot.active {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  cursor: default;
 }
 
 .feedback .info .dot {
@@ -467,23 +476,21 @@ a {
   height: 6px;
   border-radius: 50%;
   background-color: #634700;
-  cursor: pointer;
-}
-
-.feedback .info .dot.active {
-  background-color: var(--primary-color);
-  cursor: default;
 }
 
 /* code khối bên phải */
 .feedback .describe {
-  width: 66%;
   margin-left: 241px;
+  width: 66%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .feedback .describe .desc {
   font-size: 2.6rem;
   font-style: italic;
+  font-weight: 400;
   line-height: 1.54;
   color: #ffffff;
   padding-left: 36px;

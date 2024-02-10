@@ -470,10 +470,10 @@ a {
   cursor: pointer;
 }
 
-.feedback .info .dot.active {
+/* .feedback .info .dot.active {
   background-color: var(--primary-color);
   cursor: default;
-}
+} */
 
 /* code khối bên phải */
 .feedback .describe {
