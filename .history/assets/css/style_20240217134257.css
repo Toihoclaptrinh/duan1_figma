@@ -729,7 +729,6 @@ footer {
 footer .row {
   display: flex;
   border-bottom: 1px solid #59554b;
-  padding-bottom: 38px;
 }
 
 .row .colums:first-child {

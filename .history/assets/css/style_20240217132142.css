@@ -728,8 +728,6 @@ footer {
 
 footer .row {
   display: flex;
-  border-bottom: 1px solid #59554b;
-  padding-bottom: 38px;
 }
 
 .row .colums:first-child {
@@ -768,33 +766,5 @@ footer .row {
 
 .row .colums .list {
   margin-top: 28px;
-}
-
-.row .colums .list a {
-  color: #bfbcb2;
-  display: inline-block;
-  margin-bottom: 12px;
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.857;
-}
-
-.row .colums li:last-child a {
-  margin-bottom: 0px;
-}
-
-.row .list strong {
-  color: #fff;
-  font-size: 1.4rem;
-  font-weight: 600;
-  line-height: 1.857;
-}
-
-footer .copyright {
-  padding: 28px 0 23px;
-  color: #807d74;
-  text-align: center;
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.857;
+  column-gap: 12px;
 }

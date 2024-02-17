@@ -592,7 +592,7 @@ a {
 
 .blogs {
   margin-top: 140px;
-  padding: 96px 135px 96px 135px;
+  padding: 96px 135px 140px 135px;
   background-color: #fffcf4;
 }
 
@@ -613,15 +613,13 @@ a {
   display: flex;
   margin-top: 55px;
   gap: 30px;
-  overflow: hidden;
 }
 
 .blog-list .blog-item {
-  width: calc(33.33% - 20px);
+  width: 33.33%;
   border-radius: 16px;
   background: #fff;
   box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
-  flex-shrink: 0;
 }
 
 .blog-list .blog-item .thumb {
@@ -650,7 +648,7 @@ a {
 .blog-item .blog-content .date::before {
   position: absolute;
   left: 0px;
-  top: 10px;
+  bottom: 10px;
   content: "";
   display: block;
   width: 6px;
@@ -662,7 +660,7 @@ a {
 .blog-item .blog-content .date::after {
   position: absolute;
   left: 0px;
-  top: 38px;
+  bottom: 12px;
   content: "";
   display: block;
   width: 160px;
@@ -672,129 +670,4 @@ a {
   bottom: 25px;
 }
 .blog-item .blog-content .title {
-  color: #171100;
-  font-size: 1.6rem;
-  font-weight: 600;
-  line-height: 1.75;
-  margin-top: 25px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.blog-item .blog-content .btn {
-  margin: 12px 231px 28px 20px;
-  min-width: 118px;
-  color: #fff;
-  text-align: center;
-  font-size: 1.4rem;
-  font-weight: 600;
-  line-height: 1.857;
-  background-color: #171100;
-  padding: 12px 21px;
-}
-
-.blog-item .blog-content .btn.active {
-  color: #fff;
-  background-color: #ffb900;
-}
-
-.blogs .blog-dots {
-  display: flex;
-  justify-content: center;
-  margin-top: 38px;
-  gap: 6px;
-}
-
-.blogs .blog-dots .dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 999px;
-  background: #5f5b53;
-  cursor: pointer;
-}
-
-.blogs .blog-dots .dot.active {
-  width: 6px;
-  height: 6px;
-  border-radius: 999px;
-  background: #ffb900;
-  cursor: default;
-}
-
-footer {
-  background-color: #2e2100;
-  padding: 96px 135px 0px;
-}
-
-footer .row {
-  display: flex;
-  border-bottom: 1px solid #59554b;
-  padding-bottom: 38px;
-}
-
-.row .colums:first-child {
-  width: 35%;
-}
-
-.row .colums {
-  width: 21.6667%;
-}
-
-.row .colums .desc {
-  margin-top: 18px;
-  width: 267px;
-  color: #bfbcb2;
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.86;
-}
-
-.row .colums .social {
-  margin-top: 18px;
-  display: flex;
-  gap: 18px;
-}
-
-.row .colums .title {
-  border-bottom: 1px solid #59554b;
-  display: inline-block;
-  padding-bottom: 14px;
-  padding-right: 48.775px;
-  color: #fff;
-  font-size: 1.6rem;
-  font-weight: 600;
-  line-height: 1.75;
-}
-
-.row .colums .list {
-  margin-top: 28px;
-}
-
-.row .colums .list a {
-  color: #bfbcb2;
-  display: inline-block;
-  margin-bottom: 12px;
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.857;
-}
-
-.row .colums li:last-child a {
-  margin-bottom: 0px;
-}
-
-.row .list strong {
-  color: #fff;
-  font-size: 1.4rem;
-  font-weight: 600;
-  line-height: 1.857;
-}
-
-footer .copyright {
-  padding: 28px 0 23px;
-  color: #807d74;
-  text-align: center;
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.857;
 }
